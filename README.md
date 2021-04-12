@@ -1,4 +1,4 @@
-#Create LiveTemplate
+# Create LiveTemplate
 
 ------
 
@@ -27,7 +27,7 @@ then
 im creating snackBar here,
  - ``Abbreviation`` short form of this code that brings the `Template text`
  - ``Description`` details of the template
- - ``$END$`` is a reserved keyword where our cursor will end. another one is `Statement`
+ - ``$END$`` is a reserved keyword where our cursor will end. another one is `Statement` & used for wrap with snippets. 
  - bottom ``Statement`` we define the places.
 
    - ![](screenShots/statement.png)
@@ -58,7 +58,10 @@ press ``enter/tab``
 
 if we have more variables press ``tab`` to move next variable. 
 
+## check [CustomTemplate.md](CustomTemplate.md) 
 
+
+------------
 ## Getting Started
 
 This project is a starting point for a Flutter application.
