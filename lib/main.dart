@@ -70,32 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
             _buildRow("Test position", true),
             _buildRow("inside widget", true),
 
-            GestureDetector(
-                  onTap: (){
-                    ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(
-                            content: Text("message"))
-                    );
-                    
-                  },
-                  child: Container(
-                    alignment: Alignment.center,
-                    width: 300,
-                    height: Theme.of(context).buttonTheme.height,
-                    decoration: BoxDecoration(
-                      color: Colors.blue,
-                      borderRadius: BorderRadius.circular(15),
-                    ),
-                    child: Text(
-                     "labelText",
-                      style: TextStyle(
-                        fontSize: Theme.of(context).buttonTheme.height *.6,
-                        color: Colors.white,
-                        fontWeight: FontWeight.w700,
-                      ),
-                    ),
-                  ),
-                ) 
+
           ],
         ),
       ),

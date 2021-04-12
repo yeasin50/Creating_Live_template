@@ -58,10 +58,41 @@ press ``enter/tab``
 
 if we have more variables press ``tab`` to move next variable. 
 
-## check [CustomTemplate.md](CustomTemplate.md) 
+### check [CustomTemplate.md](CustomTemplate.md) 
 
+
+
+### Sharing this ssbar Live-template to the  Flutter-intelliJ community
+
+Navigate to [``flutter-intellij/resources/liveTemplates/[flutter_miscellaneous.xml``](https://github.com/flutter/flutter-intellij/blob/master/resources/liveTemplates/flutter_miscellaneous.xml) file. 
+
+
+We can see their live templates.  The group named there is ``Flutter``, Template named ``stless``
+
+```<templateSet group="Flutter">
+<template name="stless" value="class $NAME$ extends StatelessWidget {&#10;  @override&#10;  Widget build(BuildContext context) {&#10;    return Container($END$);&#10;  }&#10;}&#10;" description="New Stateless widget" toReformat="false" toShortenFQNames="true">
+<variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+<context>
+<option name="DART_TOPLEVEL" value="true" />
+</context>
+</template>
+```
+
+
+### Let's add our ``ssbar`` inside Flutter group
+````<template name="ssbar" value="ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("$message$")));$EMD$" description="Create Text SnackBar widget" toReformat="true" toShortenFQNames="true">
+<variable name="message" expression="" defaultValue="message" alwaysStopAt="true" />
+<context>
+<option name="DART_STATEMENT" value="true" />
+</context>
+</template>
+````
+
+We are using  ``toReformat="true" ``, we don't have to give spaces and line numbers like restless .
 
 ------------
+
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
