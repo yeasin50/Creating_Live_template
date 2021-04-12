@@ -50,8 +50,9 @@ class _MyHomePageState extends State<MyHomePage> {
  void _showSnackBar() {
    ScaffoldMessenger.of(context).showSnackBar(
        SnackBar(
-           content: Text("Hey"))
+           content: Text("message"))
    );
+
  }
 
 
@@ -70,7 +71,13 @@ class _MyHomePageState extends State<MyHomePage> {
             _buildRow("inside widget", true),
 
             GestureDetector(
-                  onTap: (){},
+                  onTap: (){
+                    ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                            content: Text("message"))
+                    );
+                    
+                  },
                   child: Container(
                     alignment: Alignment.center,
                     width: 300,
